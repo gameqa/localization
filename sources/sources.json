@@ -1,0 +1,59 @@
+[
+    {
+        "displayName": "Wikipedia",
+        "identifier": "__wiki__",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png",
+        "hostname":  "wikipedia.org",
+        "domains": [
+            {
+                "domain": "is.wikipedia.org",
+                "regex": "(?<=org\\/wiki\\/)[^#?]*",
+                "exampleUrl": "https://is.wikipedia.org/wiki/Barack_Obama"
+            }
+        ]
+    },
+    {
+        "displayName": "Visindavefur",
+        "identifier": "__visindavef__",
+        "logo": "https://www.visindavefur.is/myndir/pallas_athena_merki_hi_300921.png",
+        "hostname":  "visindavefur.is",
+        "domains": [
+            {
+                "domain": "www.visindavefur.is",
+                "regex": "(?<=id=)\\d*",
+                "exampleUrl": "https://www.visindavefur.is/svar.php?id=84769"
+            },
+            {
+                "domain": "www.visindavefurinn.is",
+                "regex": "(?<=id=)\\d*",
+                "exampleUrl": "https://www.visindavefur.is/svar.php?id=84769"
+            }
+        ]
+    },
+    {
+        "displayName": "MBL",
+        "identifier": "__mbl__",
+        "logo": "https://play-lh.googleusercontent.com/JVpXqFwNbYSIZqoLFgGgAm2oPu7OnnsJ8m5d240mvQhh1xrE3Xokwn3yHzSLwUWYyPY4=w240-h480-rw",
+        "hostname":  "mbl.is",
+        "domains": [
+            {
+                "domain": "https://www.mbl.is/",
+                "regex": "(?<=mbl\\.is\\/)[^#?]*",
+                "exampleUrl": "https://www.mbl.is/frettir/innlent/2023/03/31/einn_fluttur_a_sjukrahus_eftir_arekstur_i_hvalfjard/"
+            }
+        ]
+    },
+    {
+        "displayName": "Visir",
+        "identifier": "__visir__",
+        "logo": "https://m.media-amazon.com/images/I/51eAOzJAifL.png",
+        "hostname":  "visir.is",
+        "domains": [
+            {
+                "domain": "https://www.visir.is/",
+                "regex": "(?<=is\\/g\\/)[^#?]*",
+                "exampleUrl": "https://www.visir.is/g/20232397475d/tom-legt-um-ad-litast-a-hinsta-degi-fretta-bladsins"
+            }
+        ]
+    }
+]
