@@ -5,19 +5,19 @@ pip3 install -r requirements.txt
 
 cd localized-app
 
-git clone https://github.com/cadia-lvl/qa-crowdsourcing-app.git
-git clone https://github.com/cadia-lvl/qa-crowdsourcing-api.git
+git clone https://github.com/gameqa/app-is.git
+git clone https://github.com/gameqa/api-is.git
 
-cd qa-crowdsourcing-app 
+cd app-is
 git checkout localize
 rm -r -f .git && cd ..
 
-cd qa-crowdsourcing-api 
+cd api-is
 git checkout localization
 rm -r -f .git && cd ..
 
-mv qa-crowdsourcing-app app
-mv qa-crowdsourcing-api api
+mv app-is app
+mv api-is api
 
 cd ..
 
@@ -30,13 +30,13 @@ echo ""
 echo "[TRANSLATING THE APP AND API...]"
 python3 scripts/localization_text.py --key key --repl translation --repl_file repl/repl_text.csv --dir localized-app -v
 python3 scripts/localization_emoji.py --key key --repl translation --repl_file repl/repl_emoji.csv --dir localized-app -v
-python3 scripts/localization_values.py --key english --repl translation --repl_file repl/repl_values.csv --dir localized-app -v
+# python3 scripts/localization_values.py --key english --repl translation --repl_file repl/repl_values.csv --dir localized-app -v
 
-echo ""
-echo "[TRANSLATING THE SENDGRID TEMPLATES...]"
-python3 scripts/localization_text.py --key key --repl translation --repl_file repl/repl_text.csv --dir sendgrid_templates -v
-python3 scripts/localization_emoji.py --key key --repl translation --repl_file repl/repl_emoji.csv --dir sendgrid_templates -v
-python3 scripts/localization_values.py --key english --repl translation --repl_file repl/repl_values.csv --dir sendgrid_templates -v
+# echo ""
+# echo "[TRANSLATING THE SENDGRID TEMPLATES...]"
+# python3 scripts/localization_text.py --key key --repl translation --repl_file repl/repl_text.csv --dir sendgrid_templates -v
+# python3 scripts/localization_emoji.py --key key --repl translation --repl_file repl/repl_emoji.csv --dir sendgrid_templates -v
+# python3 scripts/localization_values.py --key english --repl translation --repl_file repl/repl_values.csv --dir sendgrid_templates -v
 
 echo ""
 echo "[REMOVING SCORECARDS...]"

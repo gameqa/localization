@@ -57,7 +57,7 @@ class ReplChecker:
             if '"' in translation:
                 double_quotes_count += translation.count('"')
         
-        test_note = f"{double_quotes_count} Double Quotes Found."
+        test_note = f"{double_quotes_count} Double Quotes Found. Use single quotes"
         
         if double_quotes_count == 0:
             test_result = "PASS"
@@ -161,9 +161,9 @@ if __name__ == "__main__":
     emoji_checker.show()
     emoji_checker.save_check_results()
     
-    values_checker.check_all()
-    values_checker.show()
-    values_checker.save_check_results()
+    # values_checker.check_all()
+    # values_checker.show()
+    # values_checker.save_check_results()
     
     
     
